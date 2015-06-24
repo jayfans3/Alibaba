@@ -14,7 +14,6 @@ public class Test {
 		Document doc = Jsoup.parse(url, 3000);
 		Element content = doc.getElementById("mod-detail-bd") ; 
 		Elements imgs = content.getElementsByClass("vertical-img") ; 
-		//
 		int cnt = 0  ; 
 		for (Element img : imgs) {
 			if (cnt > 0) {
